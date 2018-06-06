@@ -48,4 +48,10 @@ public class Vehicle {
         rideSpeed = result;
 
     }
+
+    @Override
+    public String toString() {
+        return  String.format("%s:, %d %s: %b %s: %d %s: %d", "Speed", getSpeed(), "Can Break", getHasBreakingSystem(),
+                "Number of Wheels", getNumberOfWheels(), "Ride Speed", getRideSpeed());
+    }
 }
